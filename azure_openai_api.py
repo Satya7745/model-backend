@@ -22,11 +22,7 @@ AZURE_OPENAI_DEPLOYMENT = os.getenv("AZURE_OPENAI_DEPLOYMENT", "your-deployment-
 
 from openai import AzureOpenAI
 
-client = AzureOpenAI(
-    api_key="6VxkgheS2bkn1upOXNW2JohIAH5n7Twqf9oB30wMIlr4ya507KEdJQQJ99BCACHYHv6XJ3w3AAAAACOGm9lG",  # ← use Key1 or Key2 here
-    azure_endpoint="https://ai-dakaplhubeus2789868823382.openai.azure.com/",
-    api_version="2025-01-01-preview"
-)
+
 
 class Query(BaseModel):
     inputs: str
